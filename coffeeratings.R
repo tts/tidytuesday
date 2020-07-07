@@ -28,9 +28,9 @@ ggplot(cof_cut, aes(x = interval, y = medianValueInInterval, fill = species)) +
   labs(y = "Median points",
        x = "Altitude interval",
        title = "Altitude as such does not make much difference",
-       subtitle = "Still, rAabica grown in 2000-2500 m like e.g. in Ethiopia is found tasty (I agree)") +
+       subtitle = "Still, Arabica grown in 2000-2500 m like e.g. in Ethiopia is found tasty (I agree!)") +
   theme_tufte() +  
   theme(plot.title = element_text(hjust = .2), 
         axis.ticks = element_blank(),
         legend.title = element_blank()) + 
-  scale_fill_brewer(palette = "Dark2")
+  scale_fill_brewer(palette = "Reds")
