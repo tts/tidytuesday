@@ -33,4 +33,4 @@ ggplot(cof_cut, aes(x = interval, y = medianValueInInterval, fill = species)) +
   theme(plot.title = element_text(hjust = .2), 
         axis.ticks = element_blank(),
         legend.title = element_blank()) + 
-  scale_fill_brewer(palette = "Reds")
+  scale_fill_brewer(palette = "Dark2")
