@@ -10,7 +10,7 @@ coffees <- tt_data$coffee_ratings
 species_altitude_points <- coffees %>% 
   select(species, altitude_mean_meters, total_cup_points) %>% 
   filter(!is.na(altitude_mean_meters)) %>% 
-  filter(altitude_mean_meters < 10000) # over this this probably bad data
+  filter(altitude_mean_meters < 10000) # over this are probably bad data
 
 cof_cut <- species_altitude_points %>%
   mutate(interval = cut_interval(altitude_mean_meters, length = 500, dig.lab = 50)) %>%
