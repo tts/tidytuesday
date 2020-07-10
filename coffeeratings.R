@@ -18,6 +18,7 @@ cof_cut <- species_altitude_points %>%
   summarize(medianValueInInterval = median(total_cup_points)) %>% 
   mutate(medianValueInInterval = ifelse(species == 'Arabica', -1 * medianValueInInterval, medianValueInInterval))
 
+# http://r-statistics.co/Top50-Ggplot2-Visualizations-MasterList-R-Code.html#Population%20Pyramid
 brks <- seq(-90, 90, 10)
 lbls <- paste0(as.character(c(seq(90, 0, -10), seq(10, 90, 10))))
 
